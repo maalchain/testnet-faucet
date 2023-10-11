@@ -1,4 +1,5 @@
-# testnet-faucet
+# MaaChain Testnet Faucet
+
 Faucet for MAAL testnet
 [https://](https://faucet-testnet.maalscan.io/)https://faucet-testnet.maalscan.io/
 
