@@ -1,0 +1,8 @@
+Flask
+web3
+requests
+SQLAlchemy
+gunicorn
+Flask-SQLAlchemy
+flask-cors
+python-dotenv

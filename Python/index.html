@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MAAL Faucet</title>
+  </head>
+  <body>
+    <h1>Claim MAAL Tokens</h1>
+    <input type="text" id="address" placeholder="Enter your wallet address" />
+    <button onclick="claim()">Claim MAAL</button>
+    <p id="message"></p>
+
+    <script>
+      async function claim() {
+        let address = document.getElementById("address").value;
+        let response = await fetch("http://localhost:5000/claim", {
+          // <-- Ensure correct endpoint here
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ address: address }),
+        });
+        let result = await response.json();
+        if (response.status === 403) {
+          document.getElementById("message").innerText = result.error;
+        } else {
+          document.getElementById(
+            "message"
+          ).innerText = `Transaction Hash: ${result.txHash}`;
+        }
+      }
+    </script>
+  </body>
+</html>

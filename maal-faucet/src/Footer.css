@@ -1,0 +1,56 @@
+.d-f{
+    display: flex !important;
+}
+@media screen and (min-width:600px) {
+    .m-q-d-f{
+        display: flex !important;
+    }
+}
+.j-c-s-b{
+    justify-content: space-between !important;
+}
+.a-i-c{
+    align-items: center !important;
+}
+.w-5{
+    width: 5rem !important;
+}
+.t-a-c{
+    text-align: center !important;
+}
+.m-y-1{
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+.j-c-c{
+    justify-content: center !important;
+}
+.faucet-container_footer {
+    max-width: 83%;
+    margin: 50px auto;
+    
+ 
+  
+}
+.w-9{
+    width: 9rem !important;
+
+}
+.m-b-2{
+    margin-bottom: 2rem !important;
+}
+.m-b-1{
+    margin-bottom: 1rem !important;
+}
+
+.m-r-2{
+    margin-right: 2rem !important;
+}
+a{
+    color: inherit !important;
+    text-decoration: none !important;
+}
+a:hover{
+    color: inherit !important;
+    text-decoration: none !important;
+}
