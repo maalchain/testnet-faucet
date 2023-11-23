@@ -26,7 +26,7 @@ app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///maal_faucet.db"
 db = SQLAlchemy(app)
 
 # Connect to the EVM
-w3 = Web3(Web3.HTTPProvider("https://node2.maalscan.io"))
+w3 = Web3(Web3.HTTPProvider("https://node1.maalscan.io"))
 
 # Fetch private key from environment variable
 private_key = os.environ.get("PRIVATE_KEY")
@@ -66,7 +66,7 @@ def claim_maal():
         "to": address,
         "value": w3.to_wei(1, "ether"),  # Assuming 1 MAAL = 1 Ether for simplicity
         "gas": 21000,
-        "gasPrice": w3.to_wei("1", "gwei"),
+        "gasPrice": w3.to_wei("12", "gwei"),
         "nonce": w3.eth.get_transaction_count(account.address),
     }
     signed_tx = w3.eth.account.sign_transaction(tx, private_key)
