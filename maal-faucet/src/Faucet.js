@@ -17,7 +17,7 @@ function Faucet() {
 
     try {
       const response = await fetch(
-        "https://faucet-api-pqr8.onrender.com/claim",
+        "https://faucet-api-6imo.onrender.com/claim",
         requestOptions
       );
       const data = await response.json();
